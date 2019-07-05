@@ -86,18 +86,6 @@
         <input type="submit" name="envoyez" value="envoyez">
     </form>
 
-    <!--
-    <form>
-        <input type="text" name="">
-        <select>
-            <option></option>
-            <option></option>
-            <option></option>
-        </select>
-        <textarea></textarea>
-        <input type="submit" value="envoyez">
-    </form>
--->
 </body>
 
 </html>
