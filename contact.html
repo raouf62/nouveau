@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript">
+        function validationFormulaire() {
+            var x=document.forms["formContact"]["messageContact"].value;
+            if ((x==null) || (x=='')) {
+                alert("Vous avez oublié d'insérer un message");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+   
+    <a href="index.html">retour au CV</a>
+    <br><br>
+        
+    <form name="formContact" onsubmit="validationFormulaire()">
+    <fieldset style="width: 600px">
+    <legend>ID</legend>
+    <label for="nom">Nom</label>
+    <input type="text" name="nom" autofocus placeholder="Votre nom">
+    <br><br>
+    <label for="prenom">Prenom</label>
+    <input type="text" name="prenom" placeholder="Votre prénom">
+    <br><br>
+    <label for="mail">Mail</label>
+    <input type="email" name="mail" placeholder="*****@mail.com">
+    <br><br>
+    <label for="tel">Tel</label>
+    <input type="tel" placeholder="Votre numéro de téléphone" size="30">
+    </fieldset>
+    <br><br>
+    <fieldset style="width: 600px">
+    <legend>Message </legend>   
+    <textarea cols="50"rows="20" name="messageContact"></textarea>
+    <br><br>
+    <input type="checkbox">
+    <label>Je vous autorise à conserver ces coordonnées</label>
+    <br><br>
+    </fieldset>
+    <input type="submit" value="envoyez">
+    </form>
+    
+<!--
+    <form>
+        <input type="text" name="">
+        <select>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+        <textarea></textarea>
+        <input type="submit" value="envoyez">
+    </form>
+-->
+</body>
+</html>

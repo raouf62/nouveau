@@ -1,0 +1,35 @@
+strong{
+    color: orange;
+        }
+#adress {
+    color: blue;
+}
+.gras {
+    color: blueviolet;
+}
+div {
+   
+    background: -webkit-linear-gradient(top, #f0b7a1 0%,#8c3310 50%,#752201 51%,#bf6e4e 100%);
+    width: 80%;
+    padding: 15px;
+    margin: 2% 9%;
+}
+body {
+    background-image: url(images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: georgia, arial, sans-serif;
+}
+img {
+    float: right;
+    position: inherit;
+}
+
+@media screen and (max-width: 640px){
+    section {
+        display: none;
+    }
+    img {
+        width: 150px;
+    }
+}
